@@ -1,6 +1,6 @@
 ﻿namespace Planner
 {
-    partial class Form1
+    partial class PlannerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -111,6 +111,7 @@
             this.CreateBtn.TabIndex = 3;
             this.CreateBtn.Text = "Create";
             this.CreateBtn.UseVisualStyleBackColor = true;
+            this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
             // 
             // UpdateBtn
             // 
@@ -175,14 +176,15 @@
             this.DueDateLabel.TabIndex = 9;
             this.DueDateLabel.Text = "Due Date:";
             // 
-            // Form1
+            // PlannerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "PlannerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planner";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

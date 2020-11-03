@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Planner
 {
-    public partial class Form1 : Form
+    public partial class PlannerForm : Form
     {
-        public Form1()
+        public PlannerForm()
         {
             InitializeComponent();
+        }
+
+        private void CreateBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
