@@ -1,4 +1,4 @@
-﻿namespace Planner
+﻿namespace Planner.Forms
 {
     partial class PlannerForm
     {

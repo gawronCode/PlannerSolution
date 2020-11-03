@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Planner
+namespace Planner.Forms
 {
     public partial class PlannerForm : Form
     {
