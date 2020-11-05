@@ -141,6 +141,7 @@ namespace Planner.Forms
             this.UpdateBtn.TabIndex = 4;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // CreateBtn
             // 

@@ -85,5 +85,45 @@ namespace Planner.Forms
             _context.Task.Remove(task);
             _context.SaveChanges();
         }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            UpdateTaskInDb();
+        }
+
+        private void UpdateTaskInDb()
+        {
+            if (UpdateBtn.Text == "Update")
+            {
+                TaskTextBox.Text = TasksDataGridView.SelectedCells[1].Value.ToString();
+                DueDateTimePicker.Value = (DateTime)TasksDataGridView.SelectedCells[3].Value;
+                foreach (Status s in StatusComboBox.Items)
+                {
+                    if (s.Name == TasksDataGridView.SelectedCells[2].ToString())
+                    {
+                        StatusComboBox.SelectedItem = s;
+                    }
+                }
+                UpdateBtn.Text = "Save";
+                CreateBtn.Enabled = false;
+                DeleteBtn.Enabled = false;
+            }
+            else if (UpdateBtn.Text == "Save")
+            {
+                var updatedTask = _context.Task.Find((int)TasksDataGridView.SelectedCells[0].Value);
+                updatedTask.Name = TaskTextBox.Text;
+                updatedTask.StatusId = (StatusComboBox.SelectedItem as Model.Status).Id;
+                updatedTask.DueDate = DueDateTimePicker.Value;
+
+                _context.SaveChanges();
+                RefreshData();
+                UpdateBtn.Text = "Update";
+                TaskTextBox.Text = String.Empty;
+                DueDateTimePicker.Value = DateTime.Now;
+                CreateBtn.Enabled = true;
+                DeleteBtn.Enabled = true;
+            }
+        }
+
     }
 }
