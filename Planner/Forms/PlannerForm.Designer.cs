@@ -30,16 +30,16 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TaskTextBox = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.StatusComboBox = new System.Windows.Forms.ComboBox();
-            this.CreateBtn = new System.Windows.Forms.Button();
-            this.UpdateBtn = new System.Windows.Forms.Button();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.CancelBtn = new System.Windows.Forms.Button();
-            this.TaskLabel = new System.Windows.Forms.Label();
-            this.StatusLabel = new System.Windows.Forms.Label();
             this.DueDateLabel = new System.Windows.Forms.Label();
+            this.StatusLabel = new System.Windows.Forms.Label();
+            this.TaskLabel = new System.Windows.Forms.Label();
+            this.CancelBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.CreateBtn = new System.Windows.Forms.Button();
+            this.StatusComboBox = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TaskTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -74,32 +74,68 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Task";
             // 
-            // TaskTextBox
+            // DueDateLabel
             // 
-            this.TaskTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TaskTextBox.Location = new System.Drawing.Point(88, 36);
-            this.TaskTextBox.Name = "TaskTextBox";
-            this.TaskTextBox.Size = new System.Drawing.Size(396, 26);
-            this.TaskTextBox.TabIndex = 0;
+            this.DueDateLabel.AutoSize = true;
+            this.DueDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DueDateLabel.Location = new System.Drawing.Point(543, 34);
+            this.DueDateLabel.Name = "DueDateLabel";
+            this.DueDateLabel.Size = new System.Drawing.Size(93, 24);
+            this.DueDateLabel.TabIndex = 9;
+            this.DueDateLabel.Text = "Due Date:";
             // 
-            // dateTimePicker1
+            // StatusLabel
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(662, 36);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 26);
-            this.dateTimePicker1.TabIndex = 1;
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.StatusLabel.Location = new System.Drawing.Point(6, 82);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(65, 24);
+            this.StatusLabel.TabIndex = 8;
+            this.StatusLabel.Text = "Status:";
             // 
-            // StatusComboBox
+            // TaskLabel
             // 
-            this.StatusComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.StatusComboBox.FormattingEnabled = true;
-            this.StatusComboBox.Location = new System.Drawing.Point(88, 82);
-            this.StatusComboBox.Name = "StatusComboBox";
-            this.StatusComboBox.Size = new System.Drawing.Size(100, 28);
-            this.StatusComboBox.TabIndex = 2;
+            this.TaskLabel.AutoSize = true;
+            this.TaskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TaskLabel.Location = new System.Drawing.Point(6, 34);
+            this.TaskLabel.Name = "TaskLabel";
+            this.TaskLabel.Size = new System.Drawing.Size(55, 24);
+            this.TaskLabel.TabIndex = 7;
+            this.TaskLabel.Text = "Task:";
+            // 
+            // CancelBtn
+            // 
+            this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CancelBtn.Location = new System.Drawing.Point(294, 120);
+            this.CancelBtn.Name = "CancelBtn";
+            this.CancelBtn.Size = new System.Drawing.Size(90, 28);
+            this.CancelBtn.TabIndex = 6;
+            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.UseVisualStyleBackColor = true;
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DeleteBtn.Location = new System.Drawing.Point(394, 82);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(90, 28);
+            this.DeleteBtn.TabIndex = 5;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.UpdateBtn.Location = new System.Drawing.Point(294, 82);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(90, 28);
+            this.UpdateBtn.TabIndex = 4;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
             // 
             // CreateBtn
             // 
@@ -113,68 +149,33 @@
             this.CreateBtn.UseVisualStyleBackColor = true;
             this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
             // 
-            // UpdateBtn
+            // StatusComboBox
             // 
-            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.UpdateBtn.Location = new System.Drawing.Point(294, 82);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(90, 28);
-            this.UpdateBtn.TabIndex = 4;
-            this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.StatusComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.StatusComboBox.FormattingEnabled = true;
+            this.StatusComboBox.Location = new System.Drawing.Point(88, 82);
+            this.StatusComboBox.Name = "StatusComboBox";
+            this.StatusComboBox.Size = new System.Drawing.Size(100, 28);
+            this.StatusComboBox.TabIndex = 2;
+            this.StatusComboBox.Text = "select status";
             // 
-            // DeleteBtn
+            // dateTimePicker1
             // 
-            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DeleteBtn.Location = new System.Drawing.Point(394, 82);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(90, 28);
-            this.DeleteBtn.TabIndex = 5;
-            this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(662, 36);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 26);
+            this.dateTimePicker1.TabIndex = 1;
             // 
-            // CancelBtn
+            // TaskTextBox
             // 
-            this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CancelBtn.Location = new System.Drawing.Point(294, 120);
-            this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(90, 28);
-            this.CancelBtn.TabIndex = 6;
-            this.CancelBtn.Text = "Cancel";
-            this.CancelBtn.UseVisualStyleBackColor = true;
-            // 
-            // TaskLabel
-            // 
-            this.TaskLabel.AutoSize = true;
-            this.TaskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TaskLabel.Location = new System.Drawing.Point(6, 34);
-            this.TaskLabel.Name = "TaskLabel";
-            this.TaskLabel.Size = new System.Drawing.Size(55, 24);
-            this.TaskLabel.TabIndex = 7;
-            this.TaskLabel.Text = "Task:";
-            // 
-            // StatusLabel
-            // 
-            this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.StatusLabel.Location = new System.Drawing.Point(6, 82);
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(65, 24);
-            this.StatusLabel.TabIndex = 8;
-            this.StatusLabel.Text = "Status:";
-            // 
-            // DueDateLabel
-            // 
-            this.DueDateLabel.AutoSize = true;
-            this.DueDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DueDateLabel.Location = new System.Drawing.Point(543, 34);
-            this.DueDateLabel.Name = "DueDateLabel";
-            this.DueDateLabel.Size = new System.Drawing.Size(93, 24);
-            this.DueDateLabel.TabIndex = 9;
-            this.DueDateLabel.Text = "Due Date:";
+            this.TaskTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TaskTextBox.Location = new System.Drawing.Point(88, 36);
+            this.TaskTextBox.Name = "TaskTextBox";
+            this.TaskTextBox.Size = new System.Drawing.Size(396, 26);
+            this.TaskTextBox.TabIndex = 0;
             // 
             // PlannerForm
             // 

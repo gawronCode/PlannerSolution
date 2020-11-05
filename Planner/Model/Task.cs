@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Planner.Model
 {
-    class Status
+    class Task
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public override string ToString()
-        {
-            return Name;
-        }
+        public DateTime? DueDate { get; set; }
+        public int StatusId { get; set; }
+        public Status Status { get; set; }
     }
 }
