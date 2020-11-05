@@ -95,7 +95,16 @@ namespace Planner.Forms
         {
             if (UpdateBtn.Text == "Update")
             {
-                TaskTextBox.Text = TasksDataGridView.SelectedCells[1].Value.ToString();
+                try
+                {
+                    TaskTextBox.Text = TasksDataGridView.SelectedCells[1].Value.ToString();
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                    MessageBox.Show("Please select row");
+                    return;
+                }
+
                 DueDateTimePicker.Value = (DateTime)TasksDataGridView.SelectedCells[3].Value;
                 foreach (Status s in StatusComboBox.Items)
                 {
