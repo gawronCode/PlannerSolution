@@ -38,7 +38,7 @@
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.CreateBtn = new System.Windows.Forms.Button();
             this.StatusComboBox = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DueDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.TaskTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,7 +63,7 @@
             this.groupBox1.Controls.Add(this.UpdateBtn);
             this.groupBox1.Controls.Add(this.CreateBtn);
             this.groupBox1.Controls.Add(this.StatusComboBox);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.DueDateTimePicker);
             this.groupBox1.Controls.Add(this.TaskTextBox);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -157,17 +157,17 @@
             this.StatusComboBox.Name = "StatusComboBox";
             this.StatusComboBox.Size = new System.Drawing.Size(100, 28);
             this.StatusComboBox.TabIndex = 2;
-            this.StatusComboBox.Text = "select status";
+            this.StatusComboBox.Text = "xD";
             // 
-            // dateTimePicker1
+            // DueDateTimePicker
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(662, 36);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 26);
-            this.dateTimePicker1.TabIndex = 1;
+            this.DueDateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DueDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DueDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DueDateTimePicker.Location = new System.Drawing.Point(662, 36);
+            this.DueDateTimePicker.Name = "DueDateTimePicker";
+            this.DueDateTimePicker.Size = new System.Drawing.Size(100, 26);
+            this.DueDateTimePicker.TabIndex = 1;
             // 
             // TaskTextBox
             // 
@@ -207,7 +207,7 @@
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button CreateBtn;
         private System.Windows.Forms.ComboBox StatusComboBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DueDateTimePicker;
         private System.Windows.Forms.TextBox TaskTextBox;
     }
 }
