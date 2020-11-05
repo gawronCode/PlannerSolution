@@ -51,6 +51,7 @@ namespace Planner.Forms
         private void CreateBtn_Click(object sender, EventArgs e)
         {
             AddNewTaskToDb();
+            RefreshData();
         }
 
         private void AddNewTaskToDb()
@@ -70,7 +71,19 @@ namespace Planner.Forms
 
             _context.Task.Add(task);
             _context.SaveChanges();
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            DeleteTaskFromDb();
             RefreshData();
+        }
+
+        private void DeleteTaskFromDb()
+        {
+            var task = _context.Task.Find((int)TasksDataGridView.SelectedCells[0].Value);
+            _context.Task.Remove(task);
+            _context.SaveChanges();
         }
     }
 }

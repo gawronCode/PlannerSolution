@@ -48,6 +48,7 @@ namespace Planner.Forms
             // 
             // TasksDataGridView
             // 
+            this.TasksDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TasksDataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.TasksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TasksDataGridView.Location = new System.Drawing.Point(10, 189);
@@ -55,7 +56,6 @@ namespace Planner.Forms
             this.TasksDataGridView.Name = "TasksDataGridView";
             this.TasksDataGridView.Size = new System.Drawing.Size(780, 251);
             this.TasksDataGridView.TabIndex = 0;
-            this.TasksDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             // 
             // groupBox1
             // 
@@ -129,6 +129,7 @@ namespace Planner.Forms
             this.DeleteBtn.TabIndex = 5;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // UpdateBtn
             // 
