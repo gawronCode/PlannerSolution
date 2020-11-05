@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 
 namespace Planner.Model
 {
-    class PlannerDbContext : DbContext
+    class Status
     {
-        public DbSet<Status> Status { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
 
     }
 }

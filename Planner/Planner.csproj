@@ -62,12 +62,27 @@
     <Compile Include="Forms\PlannerForm.Designer.cs">
       <DependentUpon>PlannerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011051219443_AddStatusToDB.cs" />
+    <Compile Include="Migrations\202011051219443_AddStatusToDB.designer.cs">
+      <DependentUpon>202011051219443_AddStatusToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011051227353_AddStatusSeedDataToDB.cs" />
+    <Compile Include="Migrations\202011051227353_AddStatusSeedDataToDB.designer.cs">
+      <DependentUpon>202011051227353_AddStatusSeedDataToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\PlannerDbContext.cs" />
+    <Compile Include="Model\Status.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\PlannerForm.resx">
       <DependentUpon>PlannerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011051219443_AddStatusToDB.resx">
+      <DependentUpon>202011051219443_AddStatusToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011051227353_AddStatusSeedDataToDB.resx">
+      <DependentUpon>202011051227353_AddStatusSeedDataToDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
