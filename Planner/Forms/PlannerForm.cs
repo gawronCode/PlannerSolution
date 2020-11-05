@@ -21,6 +21,7 @@ namespace Planner.Forms
             _context = new PlannerDbContext();
             InitializeComponent();
             AddItemsToStatusComboBox();
+            RefreshData();
         }
 
         private void AddItemsToStatusComboBox()
@@ -32,6 +33,19 @@ namespace Planner.Forms
             }
 
             StatusComboBox.SelectedIndex = 0;
+        }
+
+        private void RefreshData()
+        {
+            BindingSource bindingSource = new BindingSource();
+
+            var query = from t in _context.Task
+                orderby t.DueDate
+                select new {t.Id, TaskName = t.Name, StatusName = t.Status.Name, t.DueDate};
+
+            bindingSource.DataSource = query.ToList();
+            TasksDataGridView.DataSource = bindingSource;
+            TasksDataGridView.Refresh();
         }
 
         private void CreateBtn_Click(object sender, EventArgs e)
@@ -56,6 +70,7 @@ namespace Planner.Forms
 
             _context.Task.Add(task);
             _context.SaveChanges();
+            RefreshData();
         }
     }
 }
